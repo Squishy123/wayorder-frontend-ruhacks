@@ -25,6 +25,7 @@ export default class Search extends React.Component {
         let res = await axios.get(`${process.env.REACT_APP_API_URL}/merchants`);
         this.setState({results: res.data.data.merchants.map((m) => (
             <div className={styles.card}>
+                {(m.image) ? <img src={m.image}/> : null}
                 <h3>{m.name}</h3>
                 <Link to={`/merchant/${m._id}`}>Check it out</Link>
             </div>))}); 

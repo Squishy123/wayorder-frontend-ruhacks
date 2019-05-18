@@ -15,7 +15,8 @@ export default class Login extends React.Component {
             lastNameValue: "",
             emailValue: "",
             passwordValue: "",
-            status: ""
+            status: "",
+            message: ""
         }
 
         this.onEmailChange = this.onEmailChange.bind(this);
@@ -38,7 +39,7 @@ export default class Login extends React.Component {
             password: this.state.passwordValue
         })
         .then((res) => {
-            this.setState({status: res.data.status});
+            this.setState({status: res.data.status, message: res.data.message});
         })
         .catch((err) => {
             console.log(err);
@@ -51,6 +52,9 @@ export default class Login extends React.Component {
                 {
                     (this.state.status === "success") ? <Redirect to="/emailconfirm/redirect"/> : null
                 }
+
+                {(this.state.status) ? <h1>{this.state.status}</h1> : null}
+                {(this.state.message) ? <h1>{this.state.message}</h1> : null}
 
                 <div className="row">
                     <div className="fg-1 margin-10">

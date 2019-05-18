@@ -15,7 +15,8 @@ export default class Register extends React.Component {
             lastNameValue: "",
             emailValue: "",
             passwordValue: "",
-            status: ""
+            status: "",
+            message: ""
         }
 
         this.onFirstNameChange = this.onFirstNameChange.bind(this);
@@ -49,7 +50,7 @@ export default class Register extends React.Component {
             password: this.state.passwordValue
         })
         .then((res) => {
-            this.setState({status: res.data.status});
+            this.setState({status: res.data.status, message: res.data.message});
         })
         .catch((err) => {
             console.log(err);
@@ -63,6 +64,11 @@ export default class Register extends React.Component {
                     (this.state.status === "success") ? <Redirect to="/emailconfirm/redirect"/> : null
                 }
                 {/*<img src={require('../images/bg-1.png')}/>*/}
+
+                {(this.state.status) ? <h1>{this.state.status}</h1> : null}
+                {(this.state.message) ? <h1>{this.state.message}</h1> : null}
+
+                <div className={styles.container}>
                 <div className="row">
                     <div className="fg-1 margin-10">
                         <h3 className="display mb-5">Never wait for your meal</h3>
@@ -95,6 +101,7 @@ export default class Register extends React.Component {
                     <button className="submit fg-1 btn-md margin-10" onClick={this.registerUser}>Sign Up</button>
                     <Link to="/login"><button className="info fg-1 btn-md margin-10">Login</button></Link>
                 </div>
+            </div>
             </div>
         )
     }

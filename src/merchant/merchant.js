@@ -38,6 +38,7 @@ export default class Merchant extends React.Component {
     async getMenu() {
         let res = await axios.get(`${process.env.REACT_APP_API_URL}/products?merchant_id=${this.props.match.params.id}`);
         if(res.data.data.products) {
+            console.log(res.data.data.products);
         this.setState({menu: res.data.data.products.map((p) => (
             <div className={styles.menuItem}>
                 {(p.image) ? <img src={p.image}/> : null}

@@ -1,64 +1,105 @@
-body, html {
-
-  margin: 0;
-  padding: 0;
+body,
+html {
+    margin: 0;
+    padding: 0;
 }
 
 .app {
-  
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.display {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
 }
 
 .row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .fg-1 {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .fg-2 {
-  flex-grow: 2;
+    flex-grow: 2;
 }
 
 .margin-10 {
-  margin: 10px;
+    margin: 10px;
 }
 
 .input-field {
-  padding: 15px 10px 15px 10px;
-  border-radius: 10px;
-  border: none;
-  background-color: #ECF1F6;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ecf1f6;
 
-  display:flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-start {
   justify-content: flex-start;
-  align-items: flex-start;
 }
 
-input[type="text"] {
-  padding: 5px 0 5px 0;
-  border: none;
-  background-color: #ECF1F6;
-  font-weight: 600;
+input {
+    padding: 5px 0 5px 0;
+    border: none;
+    background-color: #ecf1f6;
+    font-weight: 600;
+    
+    width: 100%;
 
-  width: 100%;
+    font-size: 16px;
 }
 
-input[type="text"]:focus {
-  border: none;
+input:focus {
+    border: none;
+    outline: none;
 }
 
 label {
-  color: #7c7e80;
-  font-weight: 600;
-  position: relative;
+    color: #7c7e80;
+    font-weight: 600;
+    position: relative;
+}
+
+button {
+    padding: 15px 50px 15px 50px;
+    border-radius: 10px;
+    border: none;
+
+    font-weight: 600;
+}
+
+button.submit {
+    background-color: #ff7675;
+    color: white;
+}
+
+button.info {
+  background-color: white;
+  color: #626768;
+}
+
+.btn-md {
+    font-size: 18px;
 }

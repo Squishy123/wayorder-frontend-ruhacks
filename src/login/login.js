@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import styles from './login.module.scss';
 
-import { Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 export default class Login extends React.Component {
     constructor(props) {
@@ -71,8 +71,8 @@ export default class Login extends React.Component {
                     </div>
                 </div>
                 <div className="row flex-start">
-                    <button className="submit fg-1 btn-md margin-10" onClick={this.registerUser}>Sign Up</button>
-                    <button className="info fg-1 btn-md margin-10">Login</button>
+                    <button className="submit fg-1 btn-md margin-10" onClick={this.loginUser}>Login</button>
+                    <Link to="/register"><button className="info fg-1 btn-md margin-10">Sign Up</button></Link>
                 </div>
             </div>
         )

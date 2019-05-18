@@ -1,0 +1,33 @@
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    * {
+        margin: auto;
+    }
+}
+
+.logo {
+    color: #3a3838;
+}
+
+.auth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Raleway', sans-serif;
+
+    * {
+        margin: 5px;
+    }
+}

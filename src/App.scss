@@ -130,3 +130,16 @@ button.info:hover {
 .text-align {
     text-align: center;
 }
+
+a.grey {
+    transform: scale(1);
+    text-decoration: none;
+    color: #626768;
+    transition: .25s linear;
+}
+
+a.grey:hover {
+    transform: scale(1.25);
+    color: black;
+    transition: .25s linear;
+}

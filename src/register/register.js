@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import styles from './register.module.scss';
 
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 export default class Register extends React.Component {
     constructor(props) {
@@ -62,7 +62,7 @@ export default class Register extends React.Component {
                 {
                     (this.state.status === "success") ? <Redirect to="/emailconfirm/redirect"/> : null
                 }
-
+                {/*<img src={require('../images/bg-1.png')}/>*/}
                 <div className="row">
                     <div className="fg-1 margin-10">
                         <h3 className="display mb-5">Never wait for your meal</h3>
@@ -93,7 +93,7 @@ export default class Register extends React.Component {
                 </div>
                 <div className="row flex-start">
                     <button className="submit fg-1 btn-md margin-10" onClick={this.registerUser}>Sign Up</button>
-                    <button className="info fg-1 btn-md margin-10">Login</button>
+                    <Link to="/login"><button className="info fg-1 btn-md margin-10">Login</button></Link>
                 </div>
             </div>
         )

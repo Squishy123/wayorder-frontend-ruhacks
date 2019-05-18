@@ -6,6 +6,8 @@ import Home from './home/home';
 import Register from './register/register';
 import Login from './login/login';
 import EmailConfirmationRedirect from './emailConfirmationRedirect/emailConfirmationRedirect';
+import TopNav from './topnav/topnav';
+
 
 import './App.scss';
 
@@ -13,6 +15,8 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <TopNav/>
+
         <Route path="/" exact component={Home}/>
         <Route path="/login" component={Login}/>
         <Route path="/register" component={Register}/>

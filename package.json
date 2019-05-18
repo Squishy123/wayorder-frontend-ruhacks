@@ -1,23 +1,31 @@
 {
   "name": "wayorder-frontend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Squishy123/wayorder-frontend.git",
-  "author": "squishy123 <christian.gnaw@gmail.com>",
-  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-optipng": "^6.0.0",
-    "next": "^8.1.0",
-    "next-compose-plugins": "^2.2.0",
-    "next-optimized-images": "^2.5.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -4,6 +4,8 @@ import axios from 'axios';
 
 import styles from './register.module.scss';
 
+import { Redirect } from 'react-router-dom';
+
 export default class Register extends React.Component {
     constructor(props) {
         super(props);
@@ -12,7 +14,8 @@ export default class Register extends React.Component {
             firstNameValue: "",
             lastNameValue: "",
             emailValue: "",
-            passwordValue: ""
+            passwordValue: "",
+            status: ""
         }
 
         this.onFirstNameChange = this.onFirstNameChange.bind(this);
@@ -46,14 +49,20 @@ export default class Register extends React.Component {
             password: this.state.passwordValue
         })
         .then((res) => {
-            console.log(res);
+            this.setState({status: res.data.status});
+        })
+        .catch((err) => {
+            console.log(err);
         });
-        //console.log(this.state);
     }
 
     render() {
         return (
             <div className={styles.register}>
+                {
+                    (this.state.status === "success") ? <Redirect to="/emailconfirm/redirect"/> : null
+                }
+
                 <div className="row">
                     <div className="fg-1 margin-10">
                         <h3 className="display mb-5">Never wait for your meal</h3>

@@ -1,4 +1,6 @@
 .topnav {
+    background-color: white;
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +13,7 @@
     align-items: center;
 
     * {
-        margin: auto;
+        margin: 10px;
     }
 }
 

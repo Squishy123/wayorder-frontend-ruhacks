@@ -7,6 +7,7 @@ import Register from './register/register';
 import Login from './login/login';
 import EmailConfirmationRedirect from './emailConfirmationRedirect/emailConfirmationRedirect';
 import TopNav from './topnav/topnav';
+import Search from './search/search';
 
 
 import './App.scss';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" component={Login}/>
         <Route path="/register" component={Register}/>
         <Route path="/emailconfirm/redirect" component={EmailConfirmationRedirect}/>
+        <Route path="/search" component={Search}/>
       </div>
     </Router>
 

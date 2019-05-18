@@ -2,6 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .app {
@@ -32,6 +33,10 @@ html {
     flex-wrap: wrap;
 }
 
+.w-vw {
+    width: 100vw;
+}
+
 .fg-1 {
     flex-grow: 1;
 }
@@ -54,6 +59,44 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.search-bar {
+    padding: 15px 10px 15px 15px;
+    border-radius: 5px;
+    border: 0.5px solid #eaeaea;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+
+    * {
+        margin: 5px;
+    }
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+
+.bg-white {
+    background-color: white;
 }
 
 .flex-start {

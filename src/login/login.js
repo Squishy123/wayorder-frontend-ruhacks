@@ -32,7 +32,7 @@ export default class Login extends React.Component {
     }
 
     async loginUser() {
-        await axios.post(`http://localhost:3000/user/login`, 
+        await axios.post(`${process.env.REACT_APP_API_URL}/user/login`, 
         {
             email: this.state.emailValue,
             password: this.state.passwordValue

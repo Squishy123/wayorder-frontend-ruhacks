@@ -22,10 +22,11 @@ export default class Search extends React.Component {
     }
 
     async getMerchants() {
-        let res = await axios.get(`http://localhost:3000/merchants`);
+        let res = await axios.get(`${process.env.REACT_APP_API_URL}/merchants`);
         this.setState({results: res.data.data.merchants.map((m) => (
             <div className={styles.card}>
-                <h3>{m.name}</h3>  
+                <h3>{m.name}</h3>
+                <Link to={`/merchant/${m._id}`}>Check it out</Link>
             </div>))}); 
     }
 

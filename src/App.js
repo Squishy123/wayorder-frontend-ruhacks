@@ -8,6 +8,7 @@ import Login from './login/login';
 import EmailConfirmationRedirect from './emailConfirmationRedirect/emailConfirmationRedirect';
 import TopNav from './topnav/topnav';
 import Search from './search/search';
+import Merchant from './merchant/merchant'
 
 
 import './App.scss';
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register" component={Register}/>
         <Route path="/emailconfirm/redirect" component={EmailConfirmationRedirect}/>
         <Route path="/search" component={Search}/>
+        <Route path="/merchant/:id" component={Merchant}/>
       </div>
     </Router>
 

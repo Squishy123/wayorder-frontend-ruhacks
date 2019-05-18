@@ -1,0 +1,64 @@
+body, html {
+
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.fg-2 {
+  flex-grow: 2;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.input-field {
+  padding: 15px 10px 15px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ECF1F6;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+input[type="text"] {
+  padding: 5px 0 5px 0;
+  border: none;
+  background-color: #ECF1F6;
+  font-weight: 600;
+
+  width: 100%;
+}
+
+input[type="text"]:focus {
+  border: none;
+}
+
+label {
+  color: #7c7e80;
+  font-weight: 600;
+  position: relative;
+}

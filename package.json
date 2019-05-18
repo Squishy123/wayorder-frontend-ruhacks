@@ -6,7 +6,12 @@
   "author": "squishy123 <christian.gnaw@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-optipng": "^6.0.0",
     "next": "^8.1.0",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },

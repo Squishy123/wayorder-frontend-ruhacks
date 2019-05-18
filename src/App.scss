@@ -10,16 +10,16 @@ html {
 }
 
 .display {
-  font-size: 36px;
-  font-weight: 400;
+    font-size: 36px;
+    font-weight: 400;
 }
 
 .mb-5 {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .mt-5 {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 .row {
@@ -57,7 +57,7 @@ html {
 }
 
 .flex-start {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 input {
@@ -65,7 +65,7 @@ input {
     border: none;
     background-color: #ecf1f6;
     font-weight: 600;
-    
+
     width: 100%;
 
     font-size: 16px;
@@ -91,15 +91,42 @@ button {
 }
 
 button.submit {
+    border: 1px solid #ff7675;
     background-color: #ff7675;
     color: white;
+
+    transition: 0.25s linear;
+}
+
+button.submit:hover {
+    border: 1px solid #ff7675;
+    background-color: white;
+    color: #ff7675;
+
+    transition: 0.25s linear;
 }
 
 button.info {
-  background-color: white;
-  color: #626768;
+    border: 1px solid #626768;
+    background-color: #626768;
+    color: white;
+
+    transition: 0.25s linear;
 }
+
+button.info:hover {
+  border: 1px solid #626768;
+  background-color: white;
+  color: black;
+  
+  transition: 0.25s linear;
+}
+
 
 .btn-md {
     font-size: 18px;
+}
+
+.text-align {
+    text-align: center;
 }

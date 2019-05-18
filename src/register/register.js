@@ -93,7 +93,7 @@ export default class Register extends React.Component {
                 </div>
                 <div className="row flex-start">
                     <button className="submit fg-1 btn-md margin-10" onClick={this.registerUser}>Sign Up</button>
-                    <button className="login fg-1 btn-md margin-10">Login</button>
+                    <button className="info fg-1 btn-md margin-10">Login</button>
                 </div>
             </div>
         )
